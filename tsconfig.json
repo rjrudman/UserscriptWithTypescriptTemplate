@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "importHelpers": true,
+    "isolatedModules": true,
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "strict": true,
+    "outDir": "./dist",
+    "module": "amd",
+    "target": "esnext",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "baseUrl": "src"
+  }
+}

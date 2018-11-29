@@ -1,0 +1,6 @@
+/dist/out.js
+/dist/out.min.js
+/npm-debug.log
+/node_modules
+/typings/index.d.ts
+/typings/globals
