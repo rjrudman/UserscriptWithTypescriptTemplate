@@ -7,15 +7,15 @@ Simply run the following:
 
 ### Dependencies
 
-`npm install -g concat-cli`
-`npm install -g typescript`
-`npm install -g @types`
+`npm install -g concat-cli`  
+`npm install -g typescript`  
+`npm install -g @types`  
 
 ### Build
 
-`npm install`
-`typings install`
-`npm run build` 
+`npm install`  
+`typings install`  
+`npm run build`   
 
 And you'll have the distributable files found at `/dist/DemoScript.min.user.js` and `/dist/DemoScript.user.js`.
 
