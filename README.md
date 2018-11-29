@@ -27,9 +27,14 @@ Simply change: `entry: "./src/DemoScript.ts",` to be `entry: "./src/YOUR-ENTRY-S
 
 If you want to change the name of your distribution file, you'll need to modify `package.json`.
 
-Change `"build-plain": "webpack --mode=none && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.user.js"` to read `"build-plain": "webpack --mode=none && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/YOUR-SCRIPT-HERE.user.js"`
-
-and `"build-minified": "webpack --mode=production && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.min.user.js"` to read ``"build-minified": "webpack --mode=production && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/YOUR-SCRIPT-HERE.min.user.js"`
+Change  
+`"build-plain": "webpack --mode=none && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.user.js"`  
+to read   
+`"build-plain": "webpack --mode=none && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/YOUR-SCRIPT-HERE.user.js"`  
+And  
+`"build-minified": "webpack --mode=production && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.min.user.js"`  
+to read  
+`"build-minified": "webpack --mode=production && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/YOUR-SCRIPT-HERE.min.user.js"`  
 
 ## How do I edit the userscript meta data? 
 
