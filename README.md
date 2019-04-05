@@ -10,18 +10,18 @@ Simply run the following:
 `npm install -g concat-cli`  
 `npm install -g typescript`  
 `npm install -g @types`  
+`npm install`  
+`typings install`  
 
 ### Build
 
-`npm install`  
-`typings install`  
 `npm run build`   
 
 And you'll have the distributable files found at `/dist/DemoScript.min.user.js` and `/dist/DemoScript.user.js`.
 
 ### Test
 
-`npm run build`
+`npm run test`
 
 ## How do I rename the script?
 
