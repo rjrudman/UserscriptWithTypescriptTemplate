@@ -45,4 +45,4 @@ Search & Replace 'DemoScript' with the name of your script.
 
 ## How do I edit the userscript meta data? 
 
-Simply modify `/src/UserScriptDeclaration.js`. It'll be concatenated to the start of the distributable files verbatim. Note that you *must* require require.js in the header if you're using modules.
+Simply modify `/src/UserScriptDeclaration.js`. It'll be prepended to the distributable file verbatim. Note that you *must* require require.js in the header if you're using modules.
