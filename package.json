@@ -1,22 +1,30 @@
 {
-  "name": "userscript-with-typescript-template",
-  "version": "0.0.0",
+  "name": "DemoScript",
+  "version": "1.1.0",
   "scripts": {
-    "build": "npm run -s lint && npm run -s build-plain && npm run -s build-minified",
-    "lint": "tslint src/**/*.ts{,x}",
-    "build-plain": "webpack --mode=none && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.user.js",
-    "build-minified": "webpack --mode=production && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.min.user.js"
+    "build": "tslint src/**/*.ts{,x} && webpack && concat-cli -f src/UserScriptDeclaration.js dist/out.js -o dist/DemoScript.user.js && concat-cli -f src/UserScriptDeclaration.js dist/out.min.js -o dist/DemoScript.min.user.js",
+    "test": "cross-env TS_NODE_PROJECT=tsconfig.test.json mocha --require ts-node/register **/*.spec.ts"
   },
   "author": "Robert Rudman <rjrudman@gmail.com> (https://github.com/rjrudman)",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
     "awesome-typescript-loader": "5.2.1",
+    "chai": "^4.2.0",
     "concat-cli": "4.0.0",
-    "ts-loader": "5.3.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.0.2",
+    "rxjs": "6.4.0",
+    "ts-loader": "5.3.3",
+    "ts-node": "^8.0.3",
     "tslib": "1.9.3",
-    "tslint": "5.11.0",
-    "typescript": "3.1.6",
-    "webpack": "4.26.0",
-    "webpack-cli": "^3.1.2"
-  }
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "unminified-webpack-plugin": "2.0.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {}
 }
