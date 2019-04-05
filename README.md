@@ -11,8 +11,8 @@ Simply run the following:
 npm install -g concat-cli
 npm install -g typescript
 npm install -g @types
-npm install
 typings install
+```
 
 ### Build
 
